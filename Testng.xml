@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite" parallel="methods" thread-count="1" verbose="1">
+	<listeners>
+		<listener class-name="com.qa.utilities.TestListener" />
+	</listeners>
+	
+	<test name="Rest Basic Validations">
+		<classes>
+			<class name="com.qa.tests.FlobizAssignment" />
+			<class name="com.qa.tests.GETValidations" />
+			<class name="com.qa.tests.GroovyFeatures" />
+			<class name="com.qa.tests.HandlingSSL_TLS" />
+			<class name="com.qa.tests.HeadersAndCookiesValidation" />
+			<class name="com.qa.tests.LoggingValidations" />
+			<class name="com.qa.tests.PostValidations" />
+			<class name="com.qa.tests.ResponseVerification" />
+			<class name="com.qa.tests.SpecBuilderValidation" />
+		</classes>
+	</test>
+</suite>
