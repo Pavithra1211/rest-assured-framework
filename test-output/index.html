@@ -111,12 +111,12 @@
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.qa.tests.FlobizAssignment" hash-for-method="testCreateIssue">testCreateIssue</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.qa.tests.PostValidations" hash-for-method="testCreateIssue">testCreateIssue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.qa.tests.PostValidations" hash-for-method="testCreateIssue">testCreateIssue</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Test_Suite" title="com.qa.tests.FlobizAssignment" hash-for-method="testCreateIssue">testCreateIssue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -333,6 +333,42 @@
           <div class="suite-Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">com.qa.tests.HeadersAndCookiesValidation</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSetMultiCookies">
+                  </a> <!-- testSetMultiCookies -->
+                  <span class="method-name">testSetMultiCookies</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;200&gt; but was &lt;403&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:471)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:636)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:122)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:130)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:117)
+	at com.qa.tests.HeadersAndCookiesValidation.testSetMultiCookies(HeadersAndCookiesValidation.java:83)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 19 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Test_Suite-class-failed -->
+          <div class="suite-Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">com.qa.tests.PostValidations</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -397,96 +433,6 @@ Expected status code &lt;201&gt; but was &lt;500&gt;.
           <div class="suite-Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.qa.tests.HeadersAndCookiesValidation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSetMultiCookies">
-                  </a> <!-- testSetMultiCookies -->
-                  <span class="method-name">testSetMultiCookies</span>
-                  <div class="stack-trace">java.net.ConnectException: Connection refused: connect
-	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
-	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:79)
-	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
-	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
-	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
-	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
-	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
-	at java.net.Socket.connect(Socket.java:606)
-	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:120)
-	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:179)
-	at org.apache.http.impl.conn.ManagedClientConnectionImpl.open(ManagedClientConnectionImpl.java:328)
-	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:612)
-	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:447)
-	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:884)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
-	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:55)
-	at org.apache.http.client.HttpClient$execute$0.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl$RestAssuredHttpBuilder.doRequest(RequestSpecificationImpl.groovy:2119)
-	at io.restassured.internal.http.HTTPBuilder.doRequest(HTTPBuilder.java:494)
-	at io.restassured.internal.http.HTTPBuilder.request(HTTPBuilder.java:451)
-	at io.restassured.internal.http.HTTPBuilder$request$3.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.sendHttpRequest(RequestSpecificationImpl.groovy:1522)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at io.restassured.internal.RequestSpecificationImpl.sendRequest(RequestSpecificationImpl.groovy:1288)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:149)
-	at io.restassured.internal.filter.SendRequestFilter.filter(SendRequestFilter.groovy:30)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.time.TimingFilter.filter(TimingFilter.java:56)
-	at io.restassured.filter.Filter$filter.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at io.restassured.filter.Filter$filter$0.call(Unknown Source)
-	at io.restassured.internal.filter.FilterContextImpl.next(FilterContextImpl.groovy:72)
-	at io.restassured.filter.FilterContext$next.call(Unknown Source)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1722)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.applyPathParamsAndSendRequest(RequestSpecificationImpl.groovy:1728)
-	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:325)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1212)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1021)
-	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:812)
-	at io.restassured.internal.RequestSpecificationImpl.invokeMethod(RequestSpecificationImpl.groovy)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.call(PogoInterceptableSite.java:48)
-	at org.codehaus.groovy.runtime.callsite.PogoInterceptableSite.callCurrent(PogoInterceptableSite.java:58)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:182)
-	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy:168)
-	at io.restassured.internal.RequestSpecificationImpl.get(RequestSpecificationImpl.groovy)
-	at com.qa.tests.HeadersAndCookiesValidation.testSetMultiCookies(HeadersAndCookiesValidation.java:83)
-	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
-	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
-	at java.lang.Thread.run(Thread.java:748)
-... Removed 26 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Test_Suite-class-failed -->
-          <div class="suite-Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">com.qa.tests.GETValidations</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -532,7 +478,7 @@ Expected status code &lt;200&gt; but was &lt;404&gt;.
                   </a> <!-- testCookiesInResponse -->
                   <span class="method-name">testCookiesInResponse</span>
                   <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-Expected cookie &quot;__cfduid&quot; was not &quot;ddfb7fa7cebeb7d4d698f28dad04e6a881575996976&quot;, was &quot;d30cfdbc3697996271da3ef7e5b8926501576850879&quot;.
+Expected cookie &quot;__cfduid&quot; was not &quot;ddfb7fa7cebeb7d4d698f28dad04e6a881575996976&quot;, was &quot;d4713d65d9f979bff3781ff67dd41ff941577028375&quot;.
 
 	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
@@ -1023,176 +969,176 @@ data.addRows(42);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCreateIssue')
 data.setCell(0, 2, 'com.qa.tests.FlobizAssignment')
-data.setCell(0, 3, 11635);
+data.setCell(0, 3, 17682);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testExractDetailWithPath')
-data.setCell(1, 2, 'com.qa.tests.GETValidations')
-data.setCell(1, 3, 9725);
+data.setCell(1, 1, 'testCreateIssueErrorMessage')
+data.setCell(1, 2, 'com.qa.tests.FlobizAssignment')
+data.setCell(1, 3, 5513);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testIssueByFromEmail')
 data.setCell(2, 2, 'com.qa.tests.FlobizAssignment')
-data.setCell(2, 3, 8874);
+data.setCell(2, 3, 4018);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCreateIssueErrorMessage')
-data.setCell(3, 2, 'com.qa.tests.FlobizAssignment')
-data.setCell(3, 3, 8465);
+data.setCell(3, 1, 'testCreateIssue')
+data.setCell(3, 2, 'com.qa.tests.PostValidations')
+data.setCell(3, 3, 4005);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSSL')
-data.setCell(4, 2, 'com.qa.tests.HandlingSSL_TLS')
-data.setCell(4, 3, 7294);
+data.setCell(4, 1, 'testPathParameter')
+data.setCell(4, 2, 'com.qa.tests.GETValidations')
+data.setCell(4, 3, 3704);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testResponseTime')
-data.setCell(5, 2, 'com.qa.tests.ResponseVerification')
-data.setCell(5, 3, 4738);
+data.setCell(5, 1, 'testHeaderParameter')
+data.setCell(5, 2, 'com.qa.tests.GETValidations')
+data.setCell(5, 3, 3346);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testExractResponse')
-data.setCell(6, 2, 'com.qa.tests.GETValidations')
-data.setCell(6, 3, 4568);
+data.setCell(6, 1, 'testListAll')
+data.setCell(6, 2, 'com.qa.tests.FlobizAssignment')
+data.setCell(6, 3, 2953);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testHeaders')
-data.setCell(7, 2, 'com.qa.tests.HeadersAndCookiesValidation')
-data.setCell(7, 3, 3992);
+data.setCell(7, 1, 'testQueryParameter')
+data.setCell(7, 2, 'com.qa.tests.GETValidations')
+data.setCell(7, 3, 2898);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testTLS')
-data.setCell(8, 2, 'com.qa.tests.HandlingSSL_TLS')
-data.setCell(8, 3, 3889);
+data.setCell(8, 1, 'testExractDetailWithPath')
+data.setCell(8, 2, 'com.qa.tests.GETValidations')
+data.setCell(8, 3, 2872);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'testHasItems')
-data.setCell(9, 2, 'com.qa.tests.GroovyFeatures')
-data.setCell(9, 3, 3770);
+data.setCell(9, 1, 'testWithRoot')
+data.setCell(9, 2, 'com.qa.tests.GETValidations')
+data.setCell(9, 3, 2780);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'testJsonPath')
+data.setCell(10, 1, 'testSchema')
 data.setCell(10, 2, 'com.qa.tests.GroovyFeatures')
-data.setCell(10, 3, 3706);
+data.setCell(10, 3, 2766);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'testSchema')
-data.setCell(11, 2, 'com.qa.tests.GroovyFeatures')
-data.setCell(11, 3, 3444);
+data.setCell(11, 1, 'testHasItems')
+data.setCell(11, 2, 'com.qa.tests.GETValidations')
+data.setCell(11, 3, 2765);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'testCreateIssue')
-data.setCell(12, 2, 'com.qa.tests.PostValidations')
-data.setCell(12, 3, 3326);
+data.setCell(12, 1, 'testModifyIssue')
+data.setCell(12, 2, 'com.qa.tests.FlobizAssignment')
+data.setCell(12, 3, 2588);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'testDetailedCookies')
-data.setCell(13, 2, 'com.qa.tests.HeadersAndCookiesValidation')
-data.setCell(13, 3, 3111);
+data.setCell(13, 1, 'testIssueById')
+data.setCell(13, 2, 'com.qa.tests.FlobizAssignment')
+data.setCell(13, 3, 2564);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'testStauslineInResponse')
-data.setCell(14, 2, 'com.qa.tests.ResponseVerification')
-data.setCell(14, 3, 3040);
+data.setCell(14, 1, 'testHeader')
+data.setCell(14, 2, 'com.qa.tests.GETValidations')
+data.setCell(14, 3, 2553);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'testListOfNodes')
-data.setCell(15, 2, 'com.qa.tests.GroovyFeatures')
-data.setCell(15, 3, 2970);
+data.setCell(15, 1, 'testModifyIssueErrorMessage')
+data.setCell(15, 2, 'com.qa.tests.FlobizAssignment')
+data.setCell(15, 3, 2010);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'testCountNodes')
-data.setCell(16, 2, 'com.qa.tests.GroovyFeatures')
-data.setCell(16, 3, 2806);
+data.setCell(16, 1, 'testSSL')
+data.setCell(16, 2, 'com.qa.tests.HandlingSSL_TLS')
+data.setCell(16, 3, 1976);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'testHeadersInResponse')
-data.setCell(17, 2, 'com.qa.tests.ResponseVerification')
-data.setCell(17, 3, 2730);
+data.setCell(17, 1, 'testSetCookies')
+data.setCell(17, 2, 'com.qa.tests.GETValidations')
+data.setCell(17, 3, 1830);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'testModifyIssueErrorMessage')
-data.setCell(18, 2, 'com.qa.tests.FlobizAssignment')
-data.setCell(18, 3, 2626);
+data.setCell(18, 1, 'testresponse')
+data.setCell(18, 2, 'com.qa.tests.SpecBuilderValidation')
+data.setCell(18, 3, 1711);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'testModifyIssue')
-data.setCell(19, 2, 'com.qa.tests.FlobizAssignment')
-data.setCell(19, 3, 2530);
+data.setCell(19, 1, 'testSetMultivalueParameter')
+data.setCell(19, 2, 'com.qa.tests.GETValidations')
+data.setCell(19, 3, 1616);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'testCookies')
-data.setCell(20, 2, 'com.qa.tests.HeadersAndCookiesValidation')
-data.setCell(20, 3, 2515);
+data.setCell(20, 1, 'testCountNodes')
+data.setCell(20, 2, 'com.qa.tests.GroovyFeatures')
+data.setCell(20, 3, 1466);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'testEqualToFunction')
-data.setCell(21, 2, 'com.qa.tests.GETValidations')
-data.setCell(21, 3, 2507);
+data.setCell(21, 1, 'testJsonPath')
+data.setCell(21, 2, 'com.qa.tests.GroovyFeatures')
+data.setCell(21, 3, 1381);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'testListAll')
-data.setCell(22, 2, 'com.qa.tests.FlobizAssignment')
-data.setCell(22, 3, 2366);
+data.setCell(22, 1, 'testStatusCode')
+data.setCell(22, 2, 'com.qa.tests.GETValidations')
+data.setCell(22, 3, 1326);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'testIssueById')
-data.setCell(23, 2, 'com.qa.tests.FlobizAssignment')
-data.setCell(23, 3, 2185);
+data.setCell(23, 1, 'testEqualToFunction')
+data.setCell(23, 2, 'com.qa.tests.GETValidations')
+data.setCell(23, 3, 1285);
 data.setCell(24, 0, 24)
-data.setCell(24, 1, 'testresponse')
-data.setCell(24, 2, 'com.qa.tests.SpecBuilderValidation')
-data.setCell(24, 3, 2134);
+data.setCell(24, 1, 'testDetailedCookies')
+data.setCell(24, 2, 'com.qa.tests.HeadersAndCookiesValidation')
+data.setCell(24, 3, 1178);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'testSetMultiCookies')
-data.setCell(25, 2, 'com.qa.tests.HeadersAndCookiesValidation')
-data.setCell(25, 3, 2027);
+data.setCell(25, 1, 'testJSONarray')
+data.setCell(25, 2, 'com.qa.tests.GETValidations')
+data.setCell(25, 3, 1104);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'testWithRoot')
+data.setCell(26, 1, 'testLogging')
 data.setCell(26, 2, 'com.qa.tests.GETValidations')
-data.setCell(26, 3, 1976);
+data.setCell(26, 3, 1102);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'loggingTest')
-data.setCell(27, 2, 'com.qa.tests.LoggingValidations')
-data.setCell(27, 3, 1873);
+data.setCell(27, 1, 'testxmlOutput')
+data.setCell(27, 2, 'com.qa.tests.GETValidations')
+data.setCell(27, 3, 1044);
 data.setCell(28, 0, 28)
-data.setCell(28, 1, 'testHeader')
-data.setCell(28, 2, 'com.qa.tests.GETValidations')
-data.setCell(28, 3, 1646);
+data.setCell(28, 1, 'simplePost')
+data.setCell(28, 2, 'com.qa.tests.PostValidations')
+data.setCell(28, 3, 1019);
 data.setCell(29, 0, 29)
-data.setCell(29, 1, 'testSetCookies')
-data.setCell(29, 2, 'com.qa.tests.GETValidations')
-data.setCell(29, 3, 1394);
+data.setCell(29, 1, 'testListOfNodes')
+data.setCell(29, 2, 'com.qa.tests.GroovyFeatures')
+data.setCell(29, 3, 955);
 data.setCell(30, 0, 30)
-data.setCell(30, 1, 'simplePost')
-data.setCell(30, 2, 'com.qa.tests.PostValidations')
-data.setCell(30, 3, 1351);
+data.setCell(30, 1, 'testStauslineInResponse')
+data.setCell(30, 2, 'com.qa.tests.ResponseVerification')
+data.setCell(30, 3, 886);
 data.setCell(31, 0, 31)
-data.setCell(31, 1, 'testHeaderParameter')
-data.setCell(31, 2, 'com.qa.tests.GETValidations')
-data.setCell(31, 3, 1347);
+data.setCell(31, 1, 'testResponseTime')
+data.setCell(31, 2, 'com.qa.tests.ResponseVerification')
+data.setCell(31, 3, 845);
 data.setCell(32, 0, 32)
-data.setCell(32, 1, 'testxmlOutput')
-data.setCell(32, 2, 'com.qa.tests.GETValidations')
-data.setCell(32, 3, 1336);
+data.setCell(32, 1, 'loggingTest')
+data.setCell(32, 2, 'com.qa.tests.LoggingValidations')
+data.setCell(32, 3, 762);
 data.setCell(33, 0, 33)
-data.setCell(33, 1, 'testSetMultivalueParameter')
-data.setCell(33, 2, 'com.qa.tests.GETValidations')
-data.setCell(33, 3, 1320);
+data.setCell(33, 1, 'testHasItems')
+data.setCell(33, 2, 'com.qa.tests.GroovyFeatures')
+data.setCell(33, 3, 739);
 data.setCell(34, 0, 34)
-data.setCell(34, 1, 'testCookiesInResponse')
-data.setCell(34, 2, 'com.qa.tests.ResponseVerification')
-data.setCell(34, 3, 1274);
+data.setCell(34, 1, 'testHeaders')
+data.setCell(34, 2, 'com.qa.tests.HeadersAndCookiesValidation')
+data.setCell(34, 3, 696);
 data.setCell(35, 0, 35)
-data.setCell(35, 1, 'testStatusCode')
+data.setCell(35, 1, 'testSetPathParameter')
 data.setCell(35, 2, 'com.qa.tests.GETValidations')
-data.setCell(35, 3, 1146);
+data.setCell(35, 3, 542);
 data.setCell(36, 0, 36)
-data.setCell(36, 1, 'testQueryParameter')
-data.setCell(36, 2, 'com.qa.tests.GETValidations')
-data.setCell(36, 3, 1128);
+data.setCell(36, 1, 'testTLS')
+data.setCell(36, 2, 'com.qa.tests.HandlingSSL_TLS')
+data.setCell(36, 3, 536);
 data.setCell(37, 0, 37)
-data.setCell(37, 1, 'testPathParameter')
-data.setCell(37, 2, 'com.qa.tests.GETValidations')
-data.setCell(37, 3, 1018);
+data.setCell(37, 1, 'testHeadersInResponse')
+data.setCell(37, 2, 'com.qa.tests.ResponseVerification')
+data.setCell(37, 3, 508);
 data.setCell(38, 0, 38)
-data.setCell(38, 1, 'testSetPathParameter')
+data.setCell(38, 1, 'testExractResponse')
 data.setCell(38, 2, 'com.qa.tests.GETValidations')
-data.setCell(38, 3, 805);
+data.setCell(38, 3, 461);
 data.setCell(39, 0, 39)
-data.setCell(39, 1, 'testJSONarray')
-data.setCell(39, 2, 'com.qa.tests.GETValidations')
-data.setCell(39, 3, 788);
+data.setCell(39, 1, 'testCookies')
+data.setCell(39, 2, 'com.qa.tests.HeadersAndCookiesValidation')
+data.setCell(39, 3, 289);
 data.setCell(40, 0, 40)
-data.setCell(40, 1, 'testLogging')
-data.setCell(40, 2, 'com.qa.tests.GETValidations')
-data.setCell(40, 3, 431);
+data.setCell(40, 1, 'testCookiesInResponse')
+data.setCell(40, 2, 'com.qa.tests.ResponseVerification')
+data.setCell(40, 3, 269);
 data.setCell(41, 0, 41)
-data.setCell(41, 1, 'testHasItems')
-data.setCell(41, 2, 'com.qa.tests.GETValidations')
-data.setCell(41, 3, 427);
+data.setCell(41, 1, 'testSetMultiCookies')
+data.setCell(41, 2, 'com.qa.tests.HeadersAndCookiesValidation')
+data.setCell(41, 3, 17);
 window.suiteTableData['Test_Suite']= { tableData: data, tableDiv: 'times-div-Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Test_Suite">
               </div> <!-- times-div-Test_Suite -->
             </div> <!-- times-div -->
@@ -1227,175 +1173,175 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCreateIssue</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">183 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCreateIssueErrorMessage</span>
-                <span class="method-start">11674 ms</span>
+                <span class="method-start">17889 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testIssueByFromEmail</span>
-                <span class="method-start">20141 ms</span>
+                <span class="method-start">23417 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testIssueById</span>
-                <span class="method-start">29018 ms</span>
+                <span class="method-start">27452 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testListAll</span>
-                <span class="method-start">31205 ms</span>
+                <span class="method-start">30018 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testModifyIssue</span>
-                <span class="method-start">33572 ms</span>
+                <span class="method-start">32973 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testModifyIssueErrorMessage</span>
-                <span class="method-start">36108 ms</span>
+                <span class="method-start">35565 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.GETValidations</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testEqualToFunction</span>
-                <span class="method-start">38735 ms</span>
+                <span class="method-start">37577 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testExractDetailWithPath</span>
-                <span class="method-start">41243 ms</span>
+                <span class="method-start">38865 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testExractResponse</span>
-                <span class="method-start">50972 ms</span>
+                <span class="method-start">41739 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testHasItems</span>
-                <span class="method-start">55544 ms</span>
+                <span class="method-start">42202 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testHeader</span>
-                <span class="method-start">55972 ms</span>
+                <span class="method-start">44971 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testHeaderParameter</span>
-                <span class="method-start">57622 ms</span>
+                <span class="method-start">47526 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testJSONarray</span>
-                <span class="method-start">58974 ms</span>
+                <span class="method-start">50876 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testLogging</span>
-                <span class="method-start">59764 ms</span>
+                <span class="method-start">51983 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPathParameter</span>
-                <span class="method-start">60199 ms</span>
+                <span class="method-start">53088 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testQueryParameter</span>
-                <span class="method-start">61218 ms</span>
+                <span class="method-start">56795 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSetCookies</span>
-                <span class="method-start">62348 ms</span>
+                <span class="method-start">59696 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSetMultivalueParameter</span>
-                <span class="method-start">63745 ms</span>
+                <span class="method-start">61528 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSetPathParameter</span>
-                <span class="method-start">65069 ms</span>
+                <span class="method-start">63145 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testStatusCode</span>
-                <span class="method-start">65878 ms</span>
+                <span class="method-start">63689 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testWithRoot</span>
-                <span class="method-start">67028 ms</span>
+                <span class="method-start">65018 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testxmlOutput</span>
-                <span class="method-start">69007 ms</span>
+                <span class="method-start">67800 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.GroovyFeatures</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testCountNodes</span>
-                <span class="method-start">70345 ms</span>
+                <span class="method-start">68847 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testHasItems</span>
-                <span class="method-start">73152 ms</span>
+                <span class="method-start">70316 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testJsonPath</span>
-                <span class="method-start">76923 ms</span>
+                <span class="method-start">71058 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testListOfNodes</span>
-                <span class="method-start">80633 ms</span>
+                <span class="method-start">72441 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testSchema</span>
-                <span class="method-start">83606 ms</span>
+                <span class="method-start">73398 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.HandlingSSL_TLS</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">87052 ms</span>
+                <span class="method-start">76166 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testSSL</span>
-                <span class="method-start">87055 ms</span>
+                <span class="method-start">76173 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTLS</span>
-                <span class="method-start">94352 ms</span>
+                <span class="method-start">78151 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.HeadersAndCookiesValidation</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testCookies</span>
-                <span class="method-start">98246 ms</span>
+                <span class="method-start">78689 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testDetailedCookies</span>
-                <span class="method-start">100766 ms</span>
+                <span class="method-start">78981 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testHeaders</span>
-                <span class="method-start">103881 ms</span>
+                <span class="method-start">80162 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testSetMultiCookies</span>
-                <span class="method-start">107876 ms</span>
+                <span class="method-start">80860 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.LoggingValidations</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">responseSpec</span>
-                <span class="method-start">109908 ms</span>
-              </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loggingTest</span>
-                <span class="method-start">109909 ms</span>
+                <span class="method-start">80879 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-class before">
+                <span class="method-name">responseSpec</span>
+                <span class="method-start">80879 ms</span>
+              </div> <!-- configuration-class before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.PostValidations</div> <!-- chronological-class-name -->
@@ -1403,13 +1349,13 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">simplePost</span>
-                <span class="method-start">111786 ms</span>
+                <span class="method-start">81643 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCreateIssue</span>
-                <span class="method-start">113140 ms</span>
+                <span class="method-start">82664 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -1418,34 +1364,34 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCookiesInResponse</span>
-                <span class="method-start">116471 ms</span>
+                <span class="method-start">86673 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testHeadersInResponse</span>
-                <span class="method-start">117748 ms</span>
+                <span class="method-start">86945 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testResponseTime</span>
-                <span class="method-start">120480 ms</span>
+                <span class="method-start">87455 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testStauslineInResponse</span>
-                <span class="method-start">125221 ms</span>
+                <span class="method-start">88302 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.tests.SpecBuilderValidation</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUpReqSpec</span>
-                <span class="method-start">128264 ms</span>
+                <span class="method-start">89189 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setUpResSpec</span>
-                <span class="method-start">128275 ms</span>
+                <span class="method-start">89194 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">testresponse</span>
-                <span class="method-start">128283 ms</span>
+                <span class="method-start">89199 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -1,0 +1,57 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 42, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 50.88 s <<< FAILURE! - in TestSuite
+com.qa.tests.FlobizAssignment.testCreateIssue  Time elapsed: 8.016 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <500>.
+
+	at com.qa.tests.FlobizAssignment.testCreateIssue(FlobizAssignment.java:127)
+
+com.qa.tests.FlobizAssignment.testIssueByFromEmail  Time elapsed: 1.719 s  <<< FAILURE!
+junit.framework.AssertionFailedError: expected:<true> but was:<false>
+	at com.qa.tests.FlobizAssignment.testIssueByFromEmail(FlobizAssignment.java:101)
+
+com.qa.tests.FlobizAssignment.testModifyIssue  Time elapsed: 1.562 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <500>.
+
+	at com.qa.tests.FlobizAssignment.testModifyIssue(FlobizAssignment.java:146)
+
+com.qa.tests.GETValidations.testHeaderParameter  Time elapsed: 1.134 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at com.qa.tests.GETValidations.testHeaderParameter(GETValidations.java:120)
+
+com.qa.tests.HeadersAndCookiesValidation.testSetMultiCookies  Time elapsed: 0.017 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <403>.
+
+	at com.qa.tests.HeadersAndCookiesValidation.testSetMultiCookies(HeadersAndCookiesValidation.java:83)
+
+com.qa.tests.PostValidations.simplePost  Time elapsed: 0.568 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <415>.
+
+	at com.qa.tests.PostValidations.simplePost(PostValidations.java:22)
+
+com.qa.tests.PostValidations.testCreateIssue  Time elapsed: 5.678 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <201> but was <500>.
+
+	at com.qa.tests.PostValidations.testCreateIssue(PostValidations.java:45)
+
+com.qa.tests.ResponseVerification.testCookiesInResponse  Time elapsed: 0.19 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected cookie "__cfduid" was not "ddfb7fa7cebeb7d4d698f28dad04e6a881575996976", was "d78e0dbe322bbf5b057f466e7dd59df731577084970".
+
+	at com.qa.tests.ResponseVerification.testCookiesInResponse(ResponseVerification.java:49)
+

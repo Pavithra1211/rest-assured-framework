@@ -1,1 +1,12 @@
-D:\WorkSpace\RestAssuredFramework\src\test\java\com\qa\restCountriesRequests\GETOperations.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\PostValidations.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\ResponseVerification.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\utilities\TestListener.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\utilities\ExtentReport.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\SpecBuilderValidation.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\GroovyFeatures.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\HandlingSSL_TLS.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\GETValidations.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\LoggingValidations.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\FlobizAssignment.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\tests\HeadersAndCookiesValidation.java
+D:\WorkSpace\rest-assured-framework\src\test\java\com\qa\utilities\ExtentTestManager.java
