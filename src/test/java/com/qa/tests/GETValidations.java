@@ -108,7 +108,7 @@ public class GETValidations {
 	 * Passing open weather app id
 	 * 
 	 */
-	@Test
+	//@Test
 	public void testHeaderParameter() {
 		given().
 			pathParam("APIKEY","4c1220bced802c52c53d8162893e162b").
