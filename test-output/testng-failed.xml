@@ -1,56 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="1" guice-stage="DEVELOPMENT" name="Failed suite [Test Suite]" parallel="methods">
-  <listeners>
-    <listener class-name="com.qa.utilities.TestListener"/>
-  </listeners>
-  <test name="Rest Basic Validations(failed)" parallel="methods">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.HeadersAndCookiesValidation">
+      <class name="com.qa.tests.Authentication">
         <methods>
-          <include name="testSetMultiCookies"/>
+          <include name="testPreemitiveAuth"/>
         </methods>
-      </class> <!-- com.qa.tests.HeadersAndCookiesValidation -->
-      <class name="com.qa.tests.PostValidations">
-        <methods>
-          <include name="simplePost"/>
-          <include name="testCreateIssue"/>
-        </methods>
-      </class> <!-- com.qa.tests.PostValidations -->
-      <class name="com.qa.tests.GETValidations">
-        <methods>
-          <include name="testHeaderParameter"/>
-        </methods>
-      </class> <!-- com.qa.tests.GETValidations -->
-      <class name="com.qa.tests.ResponseVerification">
-        <methods>
-          <include name="testCookiesInResponse"/>
-        </methods>
-      </class> <!-- com.qa.tests.ResponseVerification -->
-      <class name="com.qa.tests.SpecBuilderValidation">
-        <methods>
-          <include name="setUpReqSpec"/>
-          <include name="setUpResSpec"/>
-        </methods>
-      </class> <!-- com.qa.tests.SpecBuilderValidation -->
-      <class name="com.qa.tests.FlobizAssignment">
-        <methods>
-          <include name="testCreateIssue"/>
-          <include name="testModifyIssue"/>
-          <include name="testIssueByFromEmail"/>
-          <include name="loadResources"/>
-        </methods>
-      </class> <!-- com.qa.tests.FlobizAssignment -->
-      <class name="com.qa.tests.LoggingValidations">
-        <methods>
-          <include name="responseSpec"/>
-        </methods>
-      </class> <!-- com.qa.tests.LoggingValidations -->
-      <class name="com.qa.tests.HandlingSSL_TLS">
-        <methods>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.qa.tests.HandlingSSL_TLS -->
+      </class> <!-- com.qa.tests.Authentication -->
     </classes>
-  </test> <!-- Rest Basic Validations(failed) -->
-</suite> <!-- Failed suite [Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

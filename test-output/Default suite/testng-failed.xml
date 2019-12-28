@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.qa.tests.SpecBuilderValidation">
+      <class name="com.qa.tests.Authentication">
         <methods>
-          <include name="setUpReqSpec"/>
-          <include name="testresponse"/>
-          <include name="setUpResSpec"/>
+          <include name="testPreemitiveAuth"/>
         </methods>
-      </class> <!-- com.qa.tests.SpecBuilderValidation -->
+      </class> <!-- com.qa.tests.Authentication -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
